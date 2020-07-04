@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width" height ="device-height:auto" initial-scale="1">
+</head>
+<header>
+<h1> Reservation Form</h1>
+</header>
+<style type="text/css">
+	body{
+		background-color: lightgray;
+		
+	}
+	h1{
+		padding: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+
+}
+.d{
+	background-color: lightgray;
+	height: 75%;
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	line-height: 2.5;
+	margin: 8px 0px;
+	padding: 14px;
+	border: 3px solid black;
+	box-sizing: content-box;
+	 width: 97%;
+     padding: 5px;
+    margin-top: 6px;
+   margin-bottom: 16px; 
+   font-size: 20px;
+ font-family: sans-serif;
+}
+.s{
+	width: 100%;
+  padding: 0px ;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px ;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+	background-color: lightgray;
+}
+</style>
+<body>
+<form action="/action_page.php" method="get">
+	<div class="d">
+			 Name : <input type="text" name="name" placeholder="First Name" required>
+		 		<input type="text" name="name" placeholder="Last Name" required><br>
+		 Phone Number : <input type="del" name="del" required> <br>
+		 Email : <input type="Email" name="Email" placeholder="Email" required><br>
+		 Country:
+		 <select>
+		 	<option value="zero"></option>
+		 	<option value="Single">India</option>
+		 	<option value="Double">USA</option>
+		 	<option value="Triple">Japan</option>
+		 	<option value="Quad">London</option>
+		 	<option value="Suites">Canada</option>
+		 	<option value="Presdential Suites">Thailand</option>
+		 </select>
+		 <br>
+		 Rooms Type:
+		 <select>
+		 	<option value="zero"></option>
+		 	<option value="Single">Towers</option>
+		 	<option value="Double">Executive Club</option>
+		 	<option value="Triple">Exclusive</option>
+		 	<option value="Quad">Luxury Suits</option>
+		 	<option value="Suites">Delexue Suits</option>
+		 	<option value="Presdential Suites">Presdential Suites</option>
+		 </select>
+		 <br>
+		 Number of Guests : <input type="Number" name="Pax" required> <br>
+		 Arrival Date &  Time : <input type="Date" name="Date" required> 
+		 						<input type="Time" name="Time" required> <br>
+		 Departure Date : <input type="Date" name="Date" required><br>
+		 Free Pickup? 	
+		 				<input type="radio" id="Yes Please! - Pick me up on arrival" name="gender" value="Yes Please! - Pick me up on arrival" required>
+		 				<label for="Yes Please! - Pick me up on arrival"> Yes Please!</label>
+						
+						<input type="radio" id="No Thanks - I'll make my own way there" name="gender" value="No Thanks - I'll make my own way there" style="text-align: right;" required>
+						<label for="No Thanks - I'll make my own way there"> No Thanks!</label><br>
+		Mode Of Payment :
+		 <select>
+		 	<option value="zero"></option>
+		 	<option value="Single"> On Check-In</option>
+		 	<option value="Double">Credit Card</option>
+		 	<option value="Triple">Net Banking</option>
+		 </select>
+		 <br>
+			
+		<input type="submit" value="Proceed For Payment">
+		</div>
+</form>
+
+</body>
+</html>
